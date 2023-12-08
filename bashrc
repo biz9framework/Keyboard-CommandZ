@@ -41,30 +41,23 @@ alias 9_biz9_scriptz_deploy='bash ${SCRIPT_DIR}/dq_biz9_scriptz_deploy.sh'
 alias 9_biz9_info='bash ${SCRIPT_DIR}/dq_biz9_info.sh'
 alias 9_biz9_app_push='bash ${SCRIPT_DIR}/dq_biz9_app_push.sh'
 alias 9_biz9_app_update='bash ${SCRIPT_DIR}/dq_biz9_app_update.sh'
-
 alias 9_biz9_git_commit='bash ${SCRIPT_DIR}/dq_biz9_git_commit.sh'
 alias 9_biz9_git_push='bash ${SCRIPT_DIR}/dq_biz9_git_push.sh'
 alias 9_biz9_branch_update='bash ${SCRIPT_DIR}/dq_biz9_branch_update.sh'
-
 alias 9_biz9_npm_publish='bash ${SCRIPT_DIR}/dq_biz9_npm_publish.sh';
 alias 9_biz9_projectz='bash ${SCRIPT_DIR}/dq_biz9_projectz.sh';
 alias 9_biz9_mongo_list_dump='bash ${SCRIPT_DIR}/dq_biz9_mongo_list_dump.sh';
-
 alias 9_biz9_mobile_deploy='bash ${SCRIPT_DIR}/dq_biz9_mobile_android_deploy.sh';
 alias 9_biz9_mobile_platform_android_add='cordova platform add android@latest'
 alias 9_biz9_mobile_platform_android_rm='cordova platform rm android'
-
 alias 9_biz9_mobile_android_icon_deploy='bash ${SCRIPT_DIR}/dq_biz9_mobile_android_icon_deploy.sh';
 alias 9_biz9_mobile_android_screen_deploy='bash ${SCRIPT_DIR}/dq_biz9_mobile_android_screen_deploy.sh';
-
 alias 9_biz9_mobile_ios_screen_deploy='bash ${SCRIPT_DIR}/dq_biz9_mobile_ios_screen_deploy.sh';
-
 alias 9_biz9_mobile_build_clean='cordova clean'
 alias 9_biz9_mobile_build_prepare='cordova prepare'
 alias 9_biz9_mobile_build_compile='cordova compile'
 alias 9_biz9_mobile_build_build='cordova build'
 ### BIZ9 END ###
-
 ### ALIAS OPEN START ###
 alias 9_open_sublime='subl '
 alias 9_open_blogreader='newsboat'
@@ -120,7 +113,6 @@ alias 9_test_box_parse_themeforest='bash kit_run_app parse_themeforest'
 alias 9_test_box_write_file='bash kit_run_app write_file';
 alias 9_test_box_photo_rename='bash kit_run_app photo_rename';
 alias 9_test_box_photo_resize='bash kit_run_app photo_resize';
-
 alias 9_test_box_brevo_mail_message_send='bash kit_run_app brevo_mail_message_send';
 alias 9_test_box_uptime='bash kit_run_app uptime';
 alias 9_test_box_run='bash kit_run_app run';
@@ -134,17 +126,14 @@ alias 9_test_box_admin_order_product_cart_update='bash kit_run_app admin_order_p
 alias 9_test_box_admin_order_service_cart_update='bash kit_run_app admin_order_service_cart_update'
 alias 9_test_box_admin_order_event_cart_update='bash kit_run_app admin_order_event_cart_update'
 alias 9_test_box_admin_order_cart_detail='bash kit_run_app admin_order_cart_detail'
-
 alias 9_test_box_admin_vendor_order_checkout_free='bash kit_run_app admin_vendor_order_checkout_free'
 alias 9_test_box_admin_vendor_order_checkout_cashapp='bash kit_run_app admin_vendor_order_checkout_cashapp'
 alias 9_test_box_admin_vendor_order_checkout_striperedirecturl='bash kit_run_app admin_vendor_order_checkout_striperedirecturl'
-
 alias 9_test_box_admin_order_checkout_cashapp='bash kit_run_app admin_order_checkout_cashapp'
 alias 9_test_box_admin_order_checkout_zelle='bash kit_run_app admin_order_checkout_zelle'
 alias 9_test_box_admin_order_checkout_pay_on_delivery='bash kit_run_app admin_order_checkout_pay_on_delivery'
 alias 9_test_box_admin_order_checkout_stripe_card='bash kit_run_app admin_order_checkout_stripe_card'
 alias 9_test_box_admin_order_checkout_success='bash kit_run_app admin_order_checkout_success'
-
 alias 9_test_mongo_account_validate='bash kit_run_mongo test_account_validate'
 alias 9_test_mongo_item_update='bash kit_run_mongo test_item_update'
 alias 9_test_mongo_item_get_cache='bash kit_run_mongo get_item_cache'
@@ -192,10 +181,7 @@ alias 9_test_mongo_sub_page_get='bash kit_run_mongo test_sub_page_get'
 alias 9_test_mongo_order_get='bash kit_run_mongo test_order_get'
 alias 9_test_mongo_order_get_by_tbl_id='bash kit_run_mongo test_order_get_by_tbl_id'
 alias 9_test_mongo_count='bash kit_run_mongo test_count'
-
 ### ALIAS TEST END ###
-### ALIAS ANDROID START ###
-### ALIAS ANDROID END ###
 ### OTHER START ###
 set bell-style none
 xset b off # turn beep sound off
@@ -203,4 +189,3 @@ echo xset b off >> ~/.xession # turn beep sound off 2
 TERM="xterm"
 export TERM
 ### OTHER END ###
-
