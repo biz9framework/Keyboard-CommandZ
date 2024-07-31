@@ -18,7 +18,6 @@ alias  9_git_hub_test='ssh -T git@github.com';
 ##BIZ9 GIT END ###
 #
 ### BIZ9-CLOUD START ###
-export BIZ9_MOBILE_DEPLOY_IP="18.191.71.255"
 export BIZ9_BOX_IP_192=18.119.17.62
 export BIZ9_BOX_IP_169=3.12.71.186
 export BIZ9_BOX_IP_218=18.222.130.224
@@ -33,18 +32,25 @@ export BIZ9_BOX_IP_266="18.191.71.255"
 export BIZ9_BOX_SSH_266="${HOME}/www/projectz/266/server/other/aws/ec2_key/266.pem";
 export BIZ9_BOX_IP_204="52.6.75.232"
 export BIZ9_BOX_SSH_204="${HOME}/www/projectz/204/server/other/aws/ec2_key/204.pem";
+export BIZ9_BOX_IP_277="50.16.144.9"
+export BIZ9_BOX_SSH_277="${HOME}/www/projectz/277/server/other/aws/ec2_key/277b.pem";
+export BIZ9_BOX_IP_281="18.188.176.192"
+export BIZ9_BOX_SSH_281="${HOME}/www/projectz/281/server/other/aws/ec2_key/281.pem";
+export BIZ9_BOX_IP_284="34.205.76.255"
+export BIZ9_BOX_SSH_284="${HOME}/www/projectz/284/server/other/aws/ec2_key/284.pem";
 ### BIZ9-CLOUD END ###
 #
 ### BIZ9-MOBILE START ###
-export BIZ9_MOBILE_DEPLOY_DIR='/home/admin/www/266/service/public/uploads'
-export BIZ9_MOBILE_DOWNLOAD_URL="https://mobile.bossappz343.com/uploads"
-export BIZ9_MOBILE_SSH_KEY="${HOME}/www/projectz/266/server/other/aws/ec2_key/266.pem";
+export BIZ9_MOBILE_DEPLOY_IP=${BIZ9_BOX_IP_284};
+export BIZ9_MOBILE_DEPLOY_DIR='/home/admin/www/286/cms/public/uploads'
+export BIZ9_MOBILE_DOWNLOAD_URL="https://cms-284.mybossapp.info/uploads"
+export BIZ9_MOBILE_SSH_KEY=${BIZ9_BOX_SSH_284};
 export BIZ9_MOBILE_APP_KEY_STORE_PASSWORD="12345678"
 export BIZ9_MOBILE_APP_DEBUG_APK="platforms/android/app/build/outputs/apk/debug/app-debug.apk"
 export BIZ9_MOBILE_APP_BUNDLE_RELEASE="platforms/android/app/build/outputs/bundle/release/app-release.aab"
 export BIZ9_MOBILE_KEY_STORE="other/cordova/android/keystore/my-release-key.keystore"
 export BIZ9_MOBILE_CONFIG_FILE="other/cordova/config/config.xml"
-export BIZ9_MOBILE_ZIPALIGN_DIR=${HOME}/www/doqbox/toolz/android/cmdline-tools/cmdline-tools/bin/build-tools/33.0.2
+export BIZ9_MOBILE_ZIPALIGN_DIR=${HOME}/www/doqbox/toolz/android/cmdline-tools-src/cmdline-tools/bin/build-tools/34.0.0
 ### BIZ9-MOBILE END ###
 #
 ##Global BIZ9 PRODUCT START ###
@@ -102,7 +108,8 @@ alias 9_app_server_start='nodemon bin/www'
 alias 9_app_server_connect='bash ${SCRIPT_DIR}/app_server_connect.sh'
 alias 9_mobile_icon_update='bash ${SCRIPT_DIR}/mobile_icon_update.sh'
 alias 9_mobile_android_deploy='bash ${SCRIPT_DIR}/mobile_android_deploy.sh'
-alias 9_mobile_android_screenshot_update='bash ${SCRIPT_DIR}/mobile_android_screenshot_update.sh'
+alias 9_mobile_android_react_run='react-native run-android'
+alias 9_mobile_ios_screenshot_update='bash ${SCRIPT_DIR}/mobile_ios_screenshot_update.sh'
 alias 9_mobile_build_clean='cordova clean'
 alias 9_mobile_build_prepare='cordova prepare'
 alias 9_mobile_build_compile='cordova compile'
@@ -160,6 +167,7 @@ alias 9_test_box_run='bash kit_run_app run';
 alias 9_test_box_ping='bash kit_run_app ping'
 alias 9_test_box_firebase_send_message='bash kit_run_app firebase_send_message'
 alias 9_test_box_admin_update_local_system='bash kit_run_app admin_update_local_system'
+alias 9_test_box_admin_user_add='bash kit_run_app admin_user_add'
 alias 9_test_box_admin_update_production_system='bash kit_run_app admin_update_production_system'
 alias 9_test_box_admin_order_product_cart_add='bash kit_run_app admin_order_product_cart_add'
 alias 9_test_box_admin_order_service_cart_add='bash kit_run_app admin_order_service_cart_add'
@@ -241,11 +249,13 @@ export TERM
 ### OTHER END ###
 #
 #### ANDROID SDK START ###
-export JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64
-export PATH=${PATH}:"/usr/lib/jvm/java-11-openjdk-amd64/bin"
-export ANDROID_HOME=~/www/doqbox/toolz/android/cmdline-tools/cmdline-tools/bin
-export ANDROID_BUILD_TOOLS=~/www/doqbox/toolz/android/build-tools/android-13
-export ANDROID_PLATFORM_TOOLS=~/www/doqbox/toolz/android/platform-tools/platform-tools
+export JAVA_HOME="/usr/lib/jvm/java-1.17.0-openjdk-amd64"
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=${PATH}:"/usr/lib/jvm/java-17-openjdk-amd64/bin"
+export ANDROID_HOME="/home/mama/www/doqbox/toolz/android/cmdline-tools-src/cmdline-tools/bin" #CmdLine-tools
+export ANDROID_BUILD_TOOLS="/home/mama/www/doqbox/toolz/android/build-tools-src/android-14" #Build Tools
+export ANDROID_PLATFORM_TOOLS="/home/mama/www/doqbox/toolz/android/platform-tools-src/platform-tools" #Platform Tools
 export GRADLE_HOME=/opt/gradle
 export PATH=${PATH}:${ANDROID_BUILD_TOOLS}:${ANDROID_PLATFORM_TOOLS}:${ANDROID_HOME}:${GRADLE_HOME}/bin
 export ORG_GRADLE_PROJECT_cdvMinSdkVersion=26
