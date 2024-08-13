@@ -102,30 +102,19 @@ alias 9_app_git_commit='bash ${SCRIPT_DIR}/app_git_commit.sh'
 alias 9_app_git_config='bash ${SCRIPT_DIR}/app_git_config.sh'
 alias 9_app_git_init='bash ${SCRIPT_DIR}/app_git_init.sh'
 alias 9_app_git_push='bash ${SCRIPT_DIR}/app_git_push.sh'
-alias 9_app_server_deploy='bash ${SCRIPT_DIR}/app_server_deploy.sh'
 alias 9_app_search_text='bash ${SCRIPT_DIR}/app_search_text.sh'
 alias 9_app_server_start='nodemon bin/www'
+alias 9_app_server_deploy='bash ${SCRIPT_DIR}/app_server_deploy.sh'
 alias 9_app_server_connect='bash ${SCRIPT_DIR}/app_server_connect.sh'
-alias 9_mobile_icon_update='bash ${SCRIPT_DIR}/mobile_icon_update.sh'
-alias 9_mobile_android_deploy='bash ${SCRIPT_DIR}/mobile_android_deploy.sh'
-alias 9_mobile_android_react_run='react-native run-android'
-alias 9_mobile_ios_screenshot_update='bash ${SCRIPT_DIR}/mobile_ios_screenshot_update.sh'
-alias 9_mobile_build_clean='cordova clean'
-alias 9_mobile_build_prepare='cordova prepare'
-alias 9_mobile_build_compile='cordova compile'
-alias 9_mobile_build_build='cordova build'
-alias 9_mobile_platform_android_add='cordova platform add android@latest'
-alias 9_mobile_platform_android_rm='cordova platform rm android'
-alias 9_mobile_ios_deploy='bash ${SCRIPT_DIR}/mobile_ios_deploy.sh'
-alias 9_mobile_ios_screenshot_update='bash ${SCRIPT_DIR}/mobile_ios_screenshot_update.sh'
+alias 9_android_emulator_start='~/www/opz/toolz/genymotion/genymotion'
+alias 9_app_react_build='react-native bundle --dev false --platform android --entry-file index.js --bundle-output ./android/app/src/main/assets/index.android.bundle --assets-dest ./android/app/src/main/res'
+alias 9_app_react_cache_clear='react-native bundle --dev false --reset-cache --platform android --entry-file index.js --bundle-output ./android/app/src/main/assets/index.android.bundle --assets-dest ./android/app/src/main/res'
+alias 9_app_react_device_build_deploy='bash ${SCRIPT_DIR}/app_react_device_build_deploy.sh'
+alias 9_app_react_device_port_open='bash ${SCRIPT_DIR}/app_react_device_port_open.sh'
+alias 9_app_react_device_log_android='npx react-native log-android'
 ### ALIAS APP END ###
 
 ### ALIAS MONGO START ###
-alias 9_mongo_shell='mongo --shell --port 27019';
-alias 9_mongo_start="sudo mongod --fork --config /etc/mongod.conf"
-### ALIAS MONGO END ###
-#
-##### ALIAS MONGO START ###
 alias 9_mongo_shell='mongo --shell --port 27019';
 alias 9_mongo_start="sudo mongod --fork --config /etc/mongod.conf"
 ### ALIAS MONGO END ###
