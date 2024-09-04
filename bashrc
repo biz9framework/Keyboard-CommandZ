@@ -8,7 +8,7 @@ export BIZ9_HOME=${HOME}/www/doqbox/biz9
 #
 ##KEY START ###
 export NODE_ENV=production # keep production
-SCRIPT_DIR="scriptz";
+export SCRIPT_DIR="/home/mama/www/doqbox/biz9/biz9-scriptz/src/push/scriptz";
 ##KEY END ###
 #
 ##BIZ9 GIT START ###
@@ -75,6 +75,37 @@ alias 9_go_projectz='cd ${BIZ9_PROJECT_DIRECTORY}'
 alias 9_go_config_bashrc='vi ~/.bashrc'
 alias 9_go_config_vim='vi ~/.vimrc'
 ### ALIAS DIRECTION END ###
+
+### ALIAS DIRECTION USER START ###
+alias 9_go_home='cd ${BIZ9_HOME}/www'
+alias 9_go_downloadz='cd ${HOME}/Downloads';
+alias 9_go_documents='cd ${HOME}/Documents';
+alias 9_go_media='cd ${HOME}/media';
+alias 9_go_core='cd ${BIZ9_HOME}/biz9-core/src/unstable';
+alias 9_go_website='cd ${BIZ9_HOME}/biz9-website/src/unstable';
+alias 9_go_cms='cd ${BIZ9_HOME}/biz9-cms/src/ecomapp/unstable';
+alias 9_go_mobile='cd ${BIZ9_HOME}/biz9-mobile/src/ecomapp/unstable';
+alias 9_go_service='cd ${BIZ9_HOME}/biz9-service/src/ecomapp/unstable';
+alias 9_go_server='cd ${BIZ9_HOME}/biz9-server/src/unstable';
+alias 9_go_test='cd ${BIZ9_HOME}/biz9-test/src/unstable';
+alias 9_go_help='cd ${BIZ9_HOME}/biz9-help/src/unstable';
+alias 9_go_scriptz='cd ${BIZ9_HOME}/biz9-scriptz/src/unstable';
+alias 9_go_push='cd ${BIZ9_HOME}/biz9-scriptz/src/push';
+alias 9_go_vendor='cd ${BIZ9_HOME}/biz9-vendor/src/unstable';
+alias 9_go_change_request='cd ${BIZ9_HOME}/biz9-change-request/src/unstable';
+alias 9_go_vendor_payment='cd ${BIZ9_HOME}/biz9-vendor-payment/src/unstable';
+alias 9_go_workshop='cd ${BIZ9_HOME}/biz9-workshop/src/unstable';
+alias 9_go_opz='cd ${HOME}/www/opz';
+alias 9_go_doqbox='cd ${HOME}/www/doqbox';
+alias 9_go_biz='cd ${HOME}/www/doqbox/biz9';
+alias 9_go_keyboard_shortcutz='vi ${HOME}/www/doqbox/biz9/biz9-keyboard-commandz/bashrc';
+alias 9_go_bashrc='vi ${HOME}/.bashrc';
+alias 9_go_mobile_config='vi www/scripts/biz9-mobile/scriptz/config.js';
+### ALIAS DIRECTION USER END ###
+
+
+
+
 #
 ### ALIAS SERVER START ###
 alias 9_server_appz_running='sudo netstat -ntlp | grep LISTEN';
@@ -86,9 +117,12 @@ alias 9_server_mongo_projectz_dump='bash ${SCRIPT_DIR}/server_mongo_projectz_dum
 alias 9_framework_branch_update='bash ${SCRIPT_DIR}/framework_branch_update.sh'
 alias 9_framework_git_commit='bash ${SCRIPT_DIR}/framework_git_commit.sh'
 alias 9_framework_git_push='bash ${SCRIPT_DIR}/framework_git_push.sh'
+alias 9_framework_git_branch_checkout='bash ${SCRIPT_DIR}/framework_git_branch_checkout.sh'
+alias 9_framework_git_branch_show='bash ${SCRIPT_DIR}/framework_git_branch_show.sh'
 alias 9_framework_scriptz_update='bash ${SCRIPT_DIR}/framework_scriptz_update.sh'
-alias 9_framework_app_push='bash ${SCRIPT_DIR}/framework_app_push.sh'
-alias 9_framework_app_update='bash ${SCRIPT_DIR}/framework_app_update.sh'
+alias 9_framework_push='bash ${SCRIPT_DIR}/framework_push.sh'
+alias 9_framework_info='bash ${SCRIPT_DIR}/framework_info.sh'
+alias 9_framework_update='bash ${SCRIPT_DIR}/framework_update.sh'
 alias 9_framework_npm_publish='bash ${SCRIPT_DIR}/framework_npm_publish.sh'
 ### ALIAS FRAMEWORK END ###
 #
@@ -102,7 +136,10 @@ alias 9_app_git_commit='bash ${SCRIPT_DIR}/app_git_commit.sh'
 alias 9_app_git_config='bash ${SCRIPT_DIR}/app_git_config.sh'
 alias 9_app_git_init='bash ${SCRIPT_DIR}/app_git_init.sh'
 alias 9_app_git_push='bash ${SCRIPT_DIR}/app_git_push.sh'
-alias 9_app_search_text='bash ${SCRIPT_DIR}/app_search_text.sh'
+alias 9_app_git_branch_checkout='bash ${SCRIPT_DIR}/app_git_branch_checkout.sh'
+alias 9_app_git_branch_show='bash ${SCRIPT_DIR}/app_git_branch_show.sh'
+alias 9_app_search_string_filez='bash ${SCRIPT_DIR}/app_search_string_file.sh'
+alias 9_app_search_filename='bash ${SCRIPT_DIR}/app_search_filename.sh'
 alias 9_app_server_start='nodemon bin/www'
 alias 9_app_server_deploy='bash ${SCRIPT_DIR}/app_server_deploy.sh'
 alias 9_app_server_connect='bash ${SCRIPT_DIR}/app_server_connect.sh'
@@ -125,7 +162,6 @@ alias 9_kill_app='kill -9 ';
 alias 9_kill_all_node='killall node';
 alias 9_kill_all_app='killall ';
 alias 9_open_port_list='sudo netstat -ntlp | grep LISTEN';
-alias 9_search_filez='bash ${SCRIPT_DIR}/app_search_text.sh';
 alias 9_redis_start="service redis-server start";
 alias 9_redis_flush="su -c ' redis-cli FLUSHALL'";
 alias 9_open_sublime='subl '
